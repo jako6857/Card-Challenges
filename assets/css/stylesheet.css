@@ -1,107 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 :root {
-  --Purple: #aa506c;
-  --Green: #668979;
-  --Blue: #657b99;
-  --Light: #eaeaea;
-  --Dark: #444444;
+  --purple: #aa506c;
+  --green: #668979;
+  --blue: #657b99;
+  --light: #eaeaea;
+  --dark: #444444;
 }
 
-html {
-  background-color: var(--Light);
-}
-
-h1 {
-  padding: 10px;
-  margin: 10px;
-}
-
-.mainh2,
-.sectionOneH3 {
+body {
+  background-color: var(--light);
+  font-family: "Manrope", sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--Light);
-  font-weight: -100px;
+  text-align: center;
 }
 
-.mainHeader {
-  background-color: var(--Purple);
-  color: var(--Light);
-  padding: 0.5rem;
-  margin: 1rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-size: xx-large;
-}
-.sectionOne {
-  background-color: var(--Green);
-  color: var(--Light);
-  max-width: 90%;
-  margin-left: 40px;
-  margin-top: 10px;
+.main-header {
+  background-color: var(--purple);
+  color: var(--light);
+  padding: 2rem;
 }
 
-.cardSection {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.section-one {
+  background-color: var(--green);
+  color: var(--light);
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
   max-width: 1000px;
 }
 
-figcaption {
-  background-color: var(--Blue);
-  color: var(--Light);
-}
-figure {
-  margin: 10px;
-  padding: 5px;
-}
-
-.card1,
-.card2,
-.card3 {
-  /* display: grid;
-  grid-template-rows: repeat(3, 1fr); */
-  max-width: 400px;
-  padding: 20px;
+.card {
+  background-color: var(--blue);
+  color: var(--light);
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  margin-left: 100px;
-}
-
-.cardHeader {
-  font-size: 18px;
-  color: var(--Light);
-  font-weight: 300;
-  letter-spacing: 1px;
-  padding: 1rem;
-  margin: 0.5rem;
-  max-height: 40px;
   max-width: 300px;
 }
-p {
-  font-size: 13px;
-  color: #7a7a7a;
-  line-height: 1.6;
-  margin-bottom: 10px;
-  font-weight: 300;
+
+.card h4 {
+  margin: 0 0 1rem 0;
 }
 
-.txtContainer {
-  margin-left: 10px;
+.card p {
+  font-size: 14px;
+  color: #f0f0f0;
 }
 
-.cardBtn:hover {
-  background-color: var(--Dark);
-  color: var(--Light);
-}
-
-.cardBtn {
-  font-size: 12px;
-  color: #7a7a7a;
-  text-decoration: none;
-  font-weight: bold;
+.card-btn {
   display: inline-block;
   margin-top: 10px;
-  margin-left: 100px;
+  padding: 5px 10px;
+  background-color: var(--dark);
+  color: var(--light);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.card-btn:hover {
+  background-color: black;
 }
